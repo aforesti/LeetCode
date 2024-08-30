@@ -1,4 +1,6 @@
-﻿https://leetcode.com/problems/kth-largest-element-in-a-stream/description/
+﻿//https://leetcode.com/problems/kth-largest-element-in-a-stream/description/
+
+var largest = new KthLargest(1, new []{1,2,3});
 
 public class KthLargest {
 
