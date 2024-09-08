@@ -1,14 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// https://leetcode.com/problems/longest-common-prefix/description/
+namespace Solutions;
 
-var s = new Solution();
-
-
-Console.WriteLine(s.LongestCommonPrefix(["a"]));
-Console.WriteLine(s.LongestCommonPrefix(["flower","flow","flight"]));
-
-
-public class Solution {
-    public string LongestCommonPrefix(string[] strs) {
+public static partial class Solution {
+    public static string LongestCommonPrefix(string[] strs) {
+        if (strs.Length == 0) return "";
         var prefix = "";
         var equal = true;
         var i = 0;
@@ -22,6 +17,5 @@ public class Solution {
         }
 
         return prefix;
-
     }
 }

@@ -1,9 +1,7 @@
 ﻿// https://leetcode.com/problems/spiral-matrix-iii/description/
+namespace Solutions;
 
-var s = new Solution();
-Console.WriteLine(string.Join(", ", s.SpiralMatrixIII(5, 6, 1, 4).Select(p => $"[{p[0]}, {p[1]}]")));
-
-public class Solution {
+public static partial class Solution {
 
     readonly record struct Position(int Row, int Col)
     {
@@ -29,7 +27,7 @@ public class Solution {
         return new State(position, direction, increment);
     }
 
-    public int[][] SpiralMatrixIII(int rows, int cols, int rStart, int cStart)
+    public static int[][] SpiralMatrixIII(int rows, int cols, int rStart, int cStart)
     {
         var states = new List<State>();
         var total = rows * cols;

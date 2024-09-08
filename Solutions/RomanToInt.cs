@@ -1,15 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// https://leetcode.com/problems/roman-to-integer/description/
+namespace Solutions;
 
-var s = new Solution(); 
-Console.WriteLine(s.RomanToInt("II"));
-Console.WriteLine(s.RomanToInt("IV"));
-Console.WriteLine(s.RomanToInt("XII"));
-Console.WriteLine(s.RomanToInt("IXII"));
-Console.WriteLine(s.RomanToInt("MCMXCIX"));
-Console.WriteLine(s.RomanToInt("MCMXCIX"));
-
-public class Solution {
-    public int RomanToInt(string s) {
+public partial class Solution {
+    public static int RomanToInt(string s) {
         var sum = 0;
         for (var i = 0; i < s.Length; i++ )
         {

@@ -1,15 +1,5 @@
 ﻿// https://leetcode.com/problems/add-two-numbers/description/
-
-var s = new Solution();
-var l1 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
-var l2 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
-var result = s.AddTwoNumbers(l1, l2);
-
-while (result != null)
-{ 
-    Console.WriteLine(result.val);
-    result = result.next;
-}
+namespace Solutions;
 
 /**
  * Definition for singly-linked list.*/
@@ -17,15 +7,15 @@ public class ListNode
 {
     public int val;
     public ListNode? next;
-    public ListNode(int val = 0, ListNode next = null)
+    public ListNode(int val = 0, ListNode? next = null)
     {
         this.val = val;
         this.next = next;
     }
 }
 
-public class Solution {
-    public ListNode AddTwoNumbers(ListNode? l1, ListNode? l2)
+public static partial class Solution {
+    public static ListNode AddTwoNumbers(ListNode? l1, ListNode? l2)
     {
         var firstNode = new ListNode();
         var result = firstNode;
