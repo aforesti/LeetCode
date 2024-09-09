@@ -9,8 +9,6 @@ public class AddTwoNumbersTests
         var result = Solution.AddTwoNumbers(l1, l2);
         result.Should().BeEquivalentTo(expected);
     }
-    
-        
         
     public static IEnumerable<object[]> TestData =>
         // Input: l1 = [2,4,3], l2 = [5,6,4]
